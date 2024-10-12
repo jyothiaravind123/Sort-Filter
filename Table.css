@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(8, 8, 8);
+    color: white;
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 200px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+button{
+    width: 70px;
+    margin-bottom: 10px;
+    background-color: gray;
+    border: 1px solid rgb(237, 184, 193);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+img{
+    width: 15px;
+}
+img:hover{
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}
+
+
+
+.table{
+    width: 100%;
+    padding: 20px 50px;
+    position: fixed;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, tr{
+    font-weight: bold;
+    cursor: pointer;
+    padding: 7px 10px;
+    border: 0.5px solid #606060;
+    letter-spacing: 2px;
+}
+
+th{
+    font-size: 19px;
+    padding: 5px;
+    background-color: #454545;
+}
+
+tr{
+    position: relative;
+    font-size: 16px;
+    background-color: #454545;
+}
+
+td.del{
+    position: absolute;
+    height: 100%;
+    max-width: 4px;
+    top: 0;
+    right: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ee5253;
+    transition: all linear 0.3s;
+}
+
+tr:hover td.del {
+    max-width: 10px;
+}
+
+td.del:hover{
+    padding-right: 30px;
+}
+
+tr:hover td{
+    background-color: black;
+}
+
+td.del td.del{
+    max-width: 100%;
+}
